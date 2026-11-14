@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Evan Yudi Pratama – Data Mining & Pengembang Web/Aplikasi</title>
+<meta name="description" content="Portofolio Evan Yudi Pratama, lulusan S1 Teknologi Informasi: data mining, pengembangan web, dan aplikasi mobile.">
+<meta property="og:title" content="Evan Yudi Pratama – Data Mining & Pengembang Web/Aplikasi">
+<meta property="og:description" content="Proyek terpilih, layanan, dan pendidikan Evan Yudi Pratama.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><div class="nav">
+  <span class="pill"><span class="dot"></span>Terbuka untuk peluang kerja</span>
+  <nav aria-label="Navigasi utama"><ul>
+    <li><a href="#proyek">Proyek</a></li><li><a href="#layanan">Layanan</a></li>
+    <li><a href="#pendidikan">Pendidikan</a></li><li><a href="#skill">Skill</a></li><li><a href="#kontak">Kontak</a></li>
+  </ul></nav>
+  <div class="right">
+    <button class="pill" id="themeBtn" type="button" aria-label="Ganti mode tampilan">Mode gelap</button>
+    <a class="pill solid" href="#kontak">Hubungi</a>
+  </div>
+</div></div></header>
+
+<main class="wrap">
+<section class="hero" id="beranda">
+  <h1><span class="o">Evan </span>Yudi P</h1>
+  <div class="hero-grid">
+    <div class="hero-l">
+      <h2 id="role"></h2>
+      <p id="tagline"></p>
+      <a class="pill solid" href="#proyek">Lihat Proyek</a>
+      <a class="pill" href="asset/cv.pdf" download>Unduh CV</a>
+    </div>
+    <div class="photo" id="photo"></div>
+    <ul class="socials" id="socials"></ul>
+  </div>
+</section>
+
+<section class="panel" id="layanan" data-ghost="Layanan">
+  <h2>/Layanan</h2>
+  <div id="svcList"></div>
+</section>
+
+<section class="panel dark" id="pendidikan" data-ghost="Pendidikan">
+  <h2>/Pendidikan</h2>
+  <div class="rows" id="eduList"></div>
+</section>
+
+<section class="panel" id="skill" data-ghost="Skill">
+  <h2>/Skill</h2>
+  <div class="skills" id="skillList"></div>
+</section>
+
+<section class="panel" id="proyek" data-ghost="Proyek">
+  <h2>/Proyek terpilih</h2>
+  <div class="tabs"><div class="t" id="filters" role="group" aria-label="Filter status proyek"></div><a class="pill" id="allWork" target="_blank" rel="noopener">Lihat semua di GitHub</a></div>
+  <div class="grid" id="projectGrid"></div>
+</section>
+
+<section class="panel cta" id="kontak" data-ghost="Kontak">
+  <span class="pill avail"><span class="dot"></span>Terbuka untuk peluang kerja</span>
+  <h2>Punya proyek di pikiran?</h2>
+  <p>Saya siap berkontribusi di bidang data mining serta pengembangan web dan aplikasi untuk mewujudkan ide anda menjadi produk yang jelas dan berdampak.</p>
+  <a class="pill solid" id="mailBtn">Hubungi saya</a>
+  <form id="contactForm">
+    <label>Nama<input name="nama" required autocomplete="name"></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    <label>Pesan<textarea name="pesan" required></textarea></label>
+    <button class="pill solid" type="submit">Kirim pesan</button>
+    <p class="status" id="formStatus" role="status"></p>
+  </form>
+  <div class="socials2" id="socials2"></div>
+</section>
+</main>
+<footer>© <span id="year"></span> Evan Yudi Pratama. Seluruh hak cipta dilindungi.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
